@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded",()=>{
 
         if(ballX<paddle.offsetLeft+paddle.offsetWidth &&
              ballY>paddle.offsetTop 
-            && ballY-ball.offsetHeight<paddle.offsetTop+paddle.offsetHeight){
+            && ballY+ball.offsetHeight<paddle.offsetTop+paddle.offsetHeight){
             dx*=-1;
         }
 
